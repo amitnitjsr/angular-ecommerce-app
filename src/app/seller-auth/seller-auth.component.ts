@@ -9,7 +9,7 @@ import { SignUp } from 'src/data-type';
   styleUrls: ['./seller-auth.component.css']
 })
 export class SellerAuthComponent implements OnInit {
-
+  showLogin = false;
   constructor(
     private seller:SellerService,
     private router:Router
@@ -23,4 +23,15 @@ signUp(data:SignUp):void{
   this.seller.userSignUp(data);
 }
 
+login(data:SignUp):void{
+  // this.seller.userSignUp(data);
+}
+
+openLogin(){
+this.showLogin = true;
+}
+
+openSignup(){
+  this.showLogin = false;
+}
 }
