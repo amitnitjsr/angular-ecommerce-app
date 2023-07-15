@@ -9,6 +9,7 @@ import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
+import { SellerService } from './services/seller.service';
 
 @NgModule({
   declarations: [
@@ -27,4 +28,11 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  // constructor(
+  //   private sellerService: SellerService
+  // ){}
+  // ngOnOnit():void{
+  //   this.sellerService.re
+  // }
+ }
